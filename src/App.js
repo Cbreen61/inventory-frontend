@@ -1,17 +1,18 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { fetchRegions } from './actions/regions';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Nav from './components/Nav';
 
 class App extends React.Component {
-
-  componentDidMount(){
-    this.props.fetchRegions()
-  }
   render(){
   return (
-    "hello can you see me "
+    <Router>
+      <Nav />
+    <div className="App">
+      <h1>Hello</h1>
+    </div>
+    </Router>
   );
 }
 }
 
-export default connect(null, {fetchRegions}) (App);
+export default App ;
