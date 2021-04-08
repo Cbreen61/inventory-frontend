@@ -4,7 +4,8 @@ class About extends Component {
     render() {
         return (
             <div>
-                About
+                <h3>About this Website</h3>
+                <p>This Website is to help manage inventories at your business</p>
             </div>
         )
     }
