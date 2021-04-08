@@ -1,14 +1,11 @@
-import { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
+import { fetchRegions } from './actions/regions';
 
-class App extends Component {
+class App extends React.Component {
 
   componentDidMount(){
-    fetch('http://[::1]:3000/api/v1/regions', {
-      method: 'GET'
-    })
-    .then(response => response.json())
-    .then(data => console.log(data))
-
+    this.props.fetchRegions()
   }
   render(){
   return (
@@ -17,4 +14,4 @@ class App extends Component {
 }
 }
 
-export default App;
+export default connect(null, {fetchRegions}) (App);
