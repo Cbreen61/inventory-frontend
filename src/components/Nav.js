@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 
-class Index extends Component {
+class Nav extends Component {
     render() {
         return (
             <div>
-                list page
-                
+                Nav
             </div>
         )
     }
 }
 
-export default Index
+export default Nav

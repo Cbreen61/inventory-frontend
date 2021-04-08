@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 
-class Index extends Component {
+class Error extends Component {
     render() {
         return (
             <div>
-                list page
-                
+                Danger!! Danger!! Mistakes were made!!
             </div>
         )
     }
 }
 
-export default Index
+export default Error

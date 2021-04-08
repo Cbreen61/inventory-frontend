@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 
-class Index extends Component {
+class Footer extends Component {
     render() {
         return (
             <div>
-                list page
-                
+                Footer
             </div>
         )
     }
 }
 
-export default Index
+export default Footer

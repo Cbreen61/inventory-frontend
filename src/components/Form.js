@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 
-class Index extends Component {
+class Form extends Component {
     render() {
         return (
             <div>
-                list page
-                
+                Form
             </div>
         )
     }
 }
 
-export default Index
+export default Form
+
