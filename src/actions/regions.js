@@ -1,10 +1,8 @@
-export function fetchRegions() {
-    fetch('http://[::1]:3000/api/v1/regions', {
-        method: 'GET'
-      })
-      .then(response => response.json())
-      .then(data => console.log(data))
-
-
-
+export const fetchRegions = () => {
+  return dispatch => {
+    dispatch({ type: "LOADING" })
+    fetch('http://[::1]:3000/api/v1/regions')
+      .then(resp => resp.json())
+      .then(regions => dispatch({ type: "SET_REGIONS", regions }))
+  }
 }
